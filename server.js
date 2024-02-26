@@ -9,27 +9,32 @@ require("dotenv").config()
 
 const app = express()
 const server = http.createServer(app)
-const PORT = process.env.AIRPORT
+const AIRPORT = process.env.AIRPORT
 const DBTOKEN = process.env.DBTOKEN
 
 app.use(helmet())
 app.use(express.json())
-app.use(express.urlencoded())
+app.use(express.urlencoded({ extended: true }));
 app.use(cors())
+
+
+const memberRouter = require("./routers/memberRouter")
+app.use("/user", memberRouter)
 
 app.get("/", (req, res, next) => {
     res.send("hello world!")
 });
 
-// mongoose.connect(DBTOKEN)
-//     .then(() => {
-//         server.listen(PORT)
-//         console.log(`listen on port: ${PORT}`)
-//     })
-//     .catch((error) => {
-//         console.log(error)
-//     });
+mongoose.connect(DBTOKEN)
+    .then(() => {
+        server.listen(AIRPORT);
+        console.log(`Listen on port: ${AIRPORT}`);
+    })
+    .catch((error) => {
+        console.error(error);
+    });
 
-app.listen(PORT, () => {
-    console.log(`Example app listening on port ${PORT}`)
-  })
+
+// app.listen(PORT, () => {
+//     console.log(`Example app listening on port ${PORT}`)
+//   })

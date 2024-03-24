@@ -1,0 +1,405 @@
+body{
+    background-image: url(img/zoryane-nebo.jpg);
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.to-menu {
+ position: fixed;
+ top:800px;
+ left:50px;
+}
+
+.to-menu img{
+    width: 100px;
+    height: 100px;
+}
+
+
+a{
+    text-decoration: none;
+}
+.photo img {
+width: 100px;
+height: 100px;
+}
+.header{
+    background: linear-gradient( aqua, #fff);
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    width: 100wh;
+    justify-content: space-evenly;
+    
+    /* opacity: 0; Initial opacity (menu hidden) */
+    /* transition: opacity 0.5s ease; Transition for opacity change */
+
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    height: 100vh;
+    /* background-color: #E0FFFF; */
+    align-items: center;
+    gap:20px;
+    justify-content:flex-start;
+}
+
+.name-1{
+    padding: 10px;
+    height: 150px;
+    width: 200vh;
+    border: solid;
+    background: linear-gradient(violet, white);
+    border-radius: 30px;
+    color: black;
+    flex-direction: column;
+    display: flex;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.text-main{
+    height: 30px;
+    width: 190px;
+    border: solid;
+    background: white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.text-question{
+    margin-bottom: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.padding{
+    padding: 40px;
+}
+
+.story{
+    flex-direction: column;
+    border: solid;
+    background:  rgb(157, 117, 251,0.8);
+    /* opacity: 80%; */
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    width: 1000px;
+    height: 1500px;
+    padding: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+    gap: 20px;
+}
+.story0{
+    flex-direction: column;
+    border: solid;
+    background:  rgb(157, 117, 251,0.8);
+    /* opacity: 80%; */
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    width: 1000px;
+    height: 1500px;
+    padding: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+    gap: 20px;
+}
+
+.linear{
+    flex-direction: column;
+    border: solid;
+    background: linear-gradient( rgb(206, 255, 71), white);
+    border-radius: 30px;
+    color: black;
+    display: flex;
+    width: 350px;
+    height: 120px;
+    padding: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.picture-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    
+}
+
+.picture-container img{
+    border-radius: 20px;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    
+    
+}
+
+.type{
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.trash{
+    padding: 40px;
+}
+
+.danger-trash{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1000px;
+    gap: 30px;
+}
+
+.picture-danger img{
+    border-radius: 20px;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.danger-text{
+    flex-direction: row;
+    border: solid;
+    background: linear-gradient( hsl(160, 46%, 48%), white);
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    width: 850px;
+    height: 120px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.danger{
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.picture{
+      width: 200px;
+      height: 200px;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.5s ease; /* Анімація зміни положення */
+}
+
+.picture:active {
+    transform: scaleX(-1); /* Зеркальне відображення картинки */
+  }
+
+  /*Адаптація сайту*/
+  @media screen and (max-width:420px) {
+    .header{
+        background: linear-gradient( aqua, #fff);
+        height: 350px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+        gap: 5px;
+        width: 380px;
+        justify-content: center;
+        } 
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 60px;
+}
+
+.story {
+    flex-direction: column;
+    background: rgb(157, 117, 251, 0.8);
+    color: white;
+    display: flex;
+    width: 345px;
+    height: 2000px;
+    padding: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+.story0 {
+    flex-direction: column;
+    background: rgb(157, 117, 251, 0.8);
+    color: white;
+    display: flex;
+    width: 345px;
+    height: 2400px;
+    padding: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+.type {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    height: 370px;
+}
+#p1{
+    width: 300px;
+}
+#p2{
+    width: 300px;
+    height: 400px;
+}
+.type1{
+    height: 400px;
+}
+
+#p0{
+    padding: 10;
+    margin: 10px;
+}
+.trash {
+    padding: 30px;
+}
+
+.picture-container img{
+    border-radius: 20px;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+  }
+  .picture-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+}
+.danger {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 95%;
+    height: 150px;
+}
+.danger-text {
+    flex-direction: column;
+    border: solid;
+    background: linear-gradient(hsl(160, 46%, 48%), white);
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    width: 850px;
+    height: 100px;
+    padding: 20px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.danger-trash {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:90%;
+    height: 300px;
+    gap: 15px;
+}
+.picture-danger img{
+    border-radius: 5px;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    gap: 15px;
+}
+.text-question {
+    margin-bottom: 51px;
+    margin-left: 20px;
+    height: 40px;
+    margin-top: 10px;
+}
+.linear {
+    flex-direction: column;
+    border: solid;
+    background: linear-gradient(rgb(206, 255, 71), white);
+    border-radius: 30px;
+    color: black;
+    display: flex;
+    width: 270px;
+    height: 150px;
+    padding: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+    justify-content: center;
+    align-items: center;
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-content: flex-start;
+    align-items: center;
+}
+.name{
+    display: flex;
+    height: 240px;
+}
+.name-1 {
+    padding: 0px;
+    height: 230px;
+    width: 100%;
+    border: solid;
+    background: linear-gradient(violet, white);
+    border-radius: 0px;
+    color: black;
+    flex-direction: column;
+    display: flex;
+    font-family: 'Edu TAS Beginner', cursive;
+    flex-wrap: nowrap;
+    
+}
+.text-main {
+    height: 20px;
+    width: 150px;
+    border: solid;
+    background: white;
+    border-radius: 30px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+.to-menu {
+    position: fixed;
+    top: 75%;
+    left:5%;
+    z-index: 2;
+   }
+  }

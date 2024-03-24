@@ -1,6 +1,7 @@
+
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://23agki:TmRqcdQpNqoq5LTX@cluster0.bccvqe2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-const axios = require('axious');
+const uri = "mongodb+srv://23agki:H2Ptg8R8t7pKbkkD@kiril.rxfs7tj.mongodb.net/?retryWrites=true&w=majority&appName=Kiril";
+
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
@@ -9,37 +10,17 @@ const client = new MongoClient(uri, {
     deprecationErrors: true,
   }
 });
-const database = client.db("costomer");
-const collection = database.collection("test1");
+
 async function run() {
   try {
-      await client.connect();
-      console.log("Connected to MongoDB");
-
-      await collection.insertOne({"test key": "test value"});
-      console.log("Inserted document into the collection");
-
-      // Closing the connection
-      await client.close();
-      console.log("MongoDB connection closed");
-  } catch (error) {
-      console.error("Error:", error);
+    // Connect the client to the server	(optional starting in v4.7)
+    await client.connect();
+    // Send a ping to confirm a successful connection
+    await client.db("admin").command({ ping: 1 });
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
   }
 }
-
-async function get_test_query() {
-  try {
-      // Отримання даних з API
-      const response = await axios.get('https://data.mongodb-api.com/app/data-pyhcq/endpoint/data/v1');
-      const apiData = response.data;
-
-      // Збереження отриманих даних у колекції MongoDB
-      await collection.insertMany(apiData);
-      console.log("Data inserted into MongoDB");
-  } catch (error) {
-      console.error("Error:", error);
-  }
-}
-
-run();
-get_test_query('https://data.mongodb-api.com/app/data-pyhcq/endpoint/data/v1');
+run().catch(console.dir);

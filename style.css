@@ -1,5 +1,5 @@
 body{
-    background-image: url(img/zoryane-nebo.jpg);
+    background-image: url(img/casual_.jpg);
     background-repeat: no-repeat ;
     background-attachment: fixed;
     background-size: cover;
@@ -30,7 +30,7 @@ width: 100px;
 height: 100px;
 }
 .header{
-    background: linear-gradient( aqua, #fff);
+    background: linear-gradient( blue, yellow );
     height: 150px;
     display: flex;
     flex-direction: row;
@@ -96,7 +96,7 @@ height: 100px;
 .story{
     flex-direction: column;
     border: solid;
-    background:  rgb(157, 117, 251,0.8);
+    background:  rgba(117, 251, 184, 0.8);
     /* opacity: 80%; */
     border-radius: 30px;
     color: white;
@@ -244,7 +244,7 @@ height: 100px;
 
 .story {
     flex-direction: column;
-    background: rgb(157, 117, 251, 0.8);
+    background: rgba(117, 251, 188, 0.8);
     color: white;
     display: flex;
     width: 345px;
@@ -254,7 +254,7 @@ height: 100px;
 }
 .story0 {
     flex-direction: column;
-    background: rgb(157, 117, 251, 0.8);
+    background: rgba(117, 251, 173, 0.8);
     color: white;
     display: flex;
     width: 345px;
@@ -314,7 +314,7 @@ height: 100px;
 .danger-text {
     flex-direction: column;
     border: solid;
-    background: linear-gradient(hsl(160, 46%, 48%), white);
+    background: linear-gradient(hsl(66, 46%, 48%), white);
     border-radius: 30px;
     color: white;
     display: flex;
@@ -376,7 +376,7 @@ height: 100px;
     height: 230px;
     width: 100%;
     border: solid;
-    background: linear-gradient(violet, white);
+    background: linear-gradient(rgb(130, 238, 188), white);
     border-radius: 0px;
     color: black;
     flex-direction: column;

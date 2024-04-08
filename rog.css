@@ -1,0 +1,154 @@
+body{
+    background-image: url(img/casual_.jpg);
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
+    width: 100px;
+    height: 100px;
+    }
+
+.header{
+    background: linear-gradient( blue, yellow );
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    width: 100wh;
+    justify-content: space-evenly;
+    
+    /* opacity: 0; Initial opacity (menu hidden) */
+    /* transition: opacity 0.5s ease; Transition for opacity change */
+
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    height: 100vh;
+    /* background-color: #E0FFFF; */
+    align-items: center;
+    gap:20px;
+    justify-content:flex-start;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.story{
+    flex-direction: column;
+    border: solid;
+    background:  rgba(117, 251, 184, 0.8);
+    /* opacity: 80%; */
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    width: 1000px;
+    height: 1500px;
+    padding: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+    gap: 20px;
+}
+
+.type{
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.trash{
+    padding: 40px;
+}
+
+.linear{
+    flex-direction: column;
+    border: solid;
+    background: linear-gradient( rgb(206, 255, 71), white);
+    border-radius: 30px;
+    color: black;
+    display: flex;
+    width: 350px;
+    height: 120px;
+    padding: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.picture-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    
+}
+
+.picture-container img{
+    border-radius: 20px;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+}
+
+.danger-trash{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1000px;
+    gap: 30px;
+}
+
+.picture-danger img{
+    border-radius: 20px;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.danger-text{
+    flex-direction: row;
+    border: solid;
+    background: linear-gradient( hsl(160, 46%, 48%), white);
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    width: 850px;
+    height: 120px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.danger{
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.picture{
+      width: 200px;
+      height: 200px;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.5s ease; /* Анімація зміни положення */
+}

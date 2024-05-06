@@ -360,6 +360,8 @@ height: 100px;
     font-family: 'Edu TAS Beginner', cursive;
     justify-content: center;
     align-items: center;
+
+   
   }
   .block {
     display: flex;
@@ -404,3 +406,6 @@ height: 100px;
     z-index: 2;
    }
   }
+
+
+
